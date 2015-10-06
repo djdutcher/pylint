@@ -9,7 +9,7 @@ Run Pylint to detect errors:
 
 Story about my code getting a -18/10
 
-
+Setup config to run with errors and warnings turned on
 
 
 
