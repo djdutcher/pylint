@@ -1,0 +1,18 @@
+
+
+I was frustrated by simple errors that a compiler would have caught.
+
+Install Pylint
+Run Pylint to detect errors:
+  Show example missing parameter
+  Show other errors?
+
+Story about my code getting a -18/10
+
+
+
+
+
+
+IDE integration
+UML diagrams
