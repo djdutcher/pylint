@@ -1,0 +1,133 @@
+************* Module PXWebCITest
+E: 14, 0: No name 'MIMEText' in module 'email' (no-name-in-module)
+F: 14, 0: Unable to import 'email.MIMEText' (import-error)
+E: 15, 0: No name 'MIMEMultipart' in module 'email' (no-name-in-module)
+F: 15, 0: Unable to import 'email.MIMEMultipart' (import-error)
+W: 49,56: Redefining name 'args' from outer scope (line 310) (redefined-outer-name)
+W: 89, 8: Catching too general exception Exception (broad-except)
+E: 90, 2: Too many arguments for logging format string (logging-too-many-args)
+W: 93,19: Redefining name 'args' from outer scope (line 310) (redefined-outer-name)
+W:102,15: Redefining name 'args' from outer scope (line 310) (redefined-outer-name)
+W:112,12: Redefining name 'args' from outer scope (line 310) (redefined-outer-name)
+F:117, 1: Unable to import 'PXWebBuildRelease' (import-error)
+W:112,12: Unused argument 'args' (unused-argument)
+W:127,14: Redefining name 'args' from outer scope (line 310) (redefined-outer-name)
+F:162, 1: Unable to import 'PXWebInstall' (import-error)
+W:176,12: Redefining name 'args' from outer scope (line 310) (redefined-outer-name)
+W:176,12: Unused argument 'args' (unused-argument)
+W:220, 8: Redefining name 'args' from outer scope (line 310) (redefined-outer-name)
+W:249, 8: Catching too general exception Exception (broad-except)
+W:255, 8: Catching too general exception Exception (broad-except)
+W:270, 1: Redefining name 'args' from outer scope (line 310) (redefined-outer-name)
+W:296, 9: Redefining name 'args' from outer scope (line 310) (redefined-outer-name)
+W:304, 8: Catching too general exception Exception (broad-except)
+W:296, 9: Unused argument 'args' (unused-argument)
+W:304,21: Unused variable 'ex' (unused-variable)
+W: 10, 0: Unused import glob (unused-import)
+W: 11, 0: Unused import time (unused-import)
+
+
+Report
+======
+222 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |10     |NC         |NC         |NC          |NC       |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    pysvn (PXWebCITest)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |221    |86.33 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |2      |0.78  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |14     |5.47  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |19     |7.42  |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |19     |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |3      |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++----------------------+------------+
+|message id            |occurrences |
++======================+============+
+|redefined-outer-name  |9           |
++----------------------+------------+
+|import-error          |4           |
++----------------------+------------+
+|broad-except          |4           |
++----------------------+------------+
+|unused-argument       |3           |
++----------------------+------------+
+|unused-import         |2           |
++----------------------+------------+
+|no-name-in-module     |2           |
++----------------------+------------+
+|unused-variable       |1           |
++----------------------+------------+
+|logging-too-many-args |1           |
++----------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 8.47/10

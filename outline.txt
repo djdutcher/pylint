@@ -1,17 +1,52 @@
 
 
-I was frustrated by simple errors that a compiler would have caught.
+1.  Opening slide
+2.  Uses slide
+    a.  Talk about how I was frustrated about missing parameter errors that a compiler would have caught. 
+    b.  Show example0.py
+    c.  Talk about automated testing
+3.  Install slide
+4.  Use slide
+    a.  Show example1.py (ask people to spot errors?)
+    b.  Run pylint -E 
+5.  Coding standards slide
+    a.  Talk about PEP-8
+6.  My first experience with coding standards valuation
+    b.  Tell my story about -18/10
+7.  Customizing coding standards
+
+
+
 
 Install Pylint
 Run Pylint to detect errors:
   Show example missing parameter
   Show other errors?
 
+PEP-8 comments:
+underscore_names
+line lengths
+  
 Story about my code getting a -18/10
-
 Setup config to run with errors and warnings turned on
+Four types of messages convention, refactor, warning, and error
+Describe how to create a settings file
+Talk about how to look up messages
+    pylint --help-msg <msg-id>[,<msg-id>]
+Talk about how pylint saves the results of the previous run to show changes
+Describe sections of the report
+    Statistics by type
+    External dependencies
+    Raw metrics
+    Duplication
+    Messages by category
+    Messages
+    Global evaluation
 
 
+Some people run an error check before each commit and coding standards every week or two
+
+Test multiple files
 
 
 IDE integration

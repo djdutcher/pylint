@@ -1,0 +1,126 @@
+************* Module PXWebCITest
+E: 14, 0: No name 'MIMEText' in module 'email' (no-name-in-module)
+F: 14, 0: Unable to import 'email.MIMEText' (import-error)
+E: 15, 0: No name 'MIMEMultipart' in module 'email' (no-name-in-module)
+F: 15, 0: Unable to import 'email.MIMEMultipart' (import-error)
+W: 89, 8: Catching too general exception Exception (broad-except)
+E: 90, 2: Too many arguments for logging format string (logging-too-many-args)
+F:117, 1: Unable to import 'PXWebBuildRelease' (import-error)
+W:112,12: Unused argument 'args' (unused-argument)
+F:162, 1: Unable to import 'PXWebInstall' (import-error)
+W:176,12: Unused argument 'args' (unused-argument)
+W:249, 8: Catching too general exception Exception (broad-except)
+W:255, 8: Catching too general exception Exception (broad-except)
+W:304, 8: Catching too general exception Exception (broad-except)
+W:296, 9: Unused argument 'args' (unused-argument)
+W:304,21: Unused variable 'ex' (unused-variable)
+W: 10, 0: Unused import glob (unused-import)
+W: 11, 0: Unused import time (unused-import)
+
+
+Report
+======
+224 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |11     |10         |+1.00      |NC          |NC       |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    pysvn (PXWebCITest)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |224    |86.82 |221      |+3.00      |
++----------+-------+------+---------+-----------+
+|docstring |2      |0.78  |2        |=          |
++----------+-------+------+---------+-----------+
+|comment   |14     |5.43  |14       |=          |
++----------+-------+------+---------+-----------+
+|empty     |18     |6.98  |19       |-1.00      |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |0      |0        |=          |
++-----------+-------+---------+-----------+
+|refactor   |0      |0        |=          |
++-----------+-------+---------+-----------+
+|warning    |10     |19       |-9.00      |
++-----------+-------+---------+-----------+
+|error      |3      |3        |=          |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++----------------------+------------+
+|message id            |occurrences |
++======================+============+
+|import-error          |4           |
++----------------------+------------+
+|broad-except          |4           |
++----------------------+------------+
+|unused-argument       |3           |
++----------------------+------------+
+|unused-import         |2           |
++----------------------+------------+
+|no-name-in-module     |2           |
++----------------------+------------+
+|unused-variable       |1           |
++----------------------+------------+
+|logging-too-many-args |1           |
++----------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 8.88/10 (previous run: 8.47/10, +0.42)
+
+
+C:\Users\dave.dutcher\dev\pxweb\tools\CI>
+
