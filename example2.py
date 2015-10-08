@@ -5,13 +5,13 @@ class Point(object):
         self.x = x
         self.y = y
 
-    def debug(): #Method has no argument
+    def debug(): #no-method-argument
         print 'debug method!'
 
 def add(x, y, z):
     return x + y + z
 
-def subtract(x, x, z): #Duplicate argument name
+def subtract(x, x, z): #duplicate-argument-name
     return x + x + z
 
 def main():
@@ -19,9 +19,9 @@ def main():
         a = 1
         b = 2
 
-        print add(a, b)      # No value for argument z
-        print add(a, b, c)   # Undefined variable c
-    except Exception:        # Bad exception clauses
+        print add(a, b)      # no-value-for-parameter
+        print add(a, b, c)   # undefined-variable
+    except Exception:        # bad-except-order
         print 'Exception'
     except LookupError:
         print 'LookupError'

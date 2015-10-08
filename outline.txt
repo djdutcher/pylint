@@ -16,6 +16,13 @@
 7.  Customizing coding standards
 
 
+Four kinds of notifications:
+convention
+refactor
+warning
+error
+
+
 
 
 Install Pylint

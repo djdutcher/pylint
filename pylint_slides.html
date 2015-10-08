@@ -70,8 +70,8 @@ E: 23,24: Undefined variable 'c' (undefined-variable)
 
         <section>
             <h3>Coding Standards Verification</h3>
-            <p>PEP - 8 (by default)</p>
-            <p>Scores code on a scale of 1 to 10</p>
+            <p>Check code for "bad things"</p>
+            <p>Give the code a score on a scale of 0 to 10</p>
         </section>
 
         <section>
@@ -81,17 +81,54 @@ E: 23,24: Undefined variable 'c' (undefined-variable)
             <p>Score: <span class="fragment" style="color : red">-18.6</span></p>
         </section>
 
-        <section>
-          <h3>Example Warnings</h3>
-          <pre>
-            W:112,12: Unused argument 'args' (unused-argument)
-            W:304, 8: Catching too general exception Exception (broad-except)
-            W:296, 9: Unused argument 'args' (unused-argument)
-            W:304,21: Unused variable 'ex' (unused-variable)
-            W: 10, 0: Unused import glob (unused-import)
-            W: 11, 0: Unused import time (unused-import)
-          </pre>
-        </section>
+		<section>
+			<h3>Reported Messages</h3>	
+			<table>
+			<tr>
+				<td>Convention</td>
+				<td>For standards violations</td>
+			</tr>
+			<tr>
+				<td>Refactor</td>
+				<td>For bad code smells</td>
+			</tr>
+			<tr>
+				<td>Warning</td>
+				<td>For possible bugs</td>
+			</tr>
+			<tr>
+				<td>Error</td>
+				<td>For bugs</td>
+			</tr>
+			</table>
+		</section>
+		
+		<section>
+			<h3>Convention Messages</h3>
+			<ul>
+			<li>invalid-name</li>
+			<li>bad-whitespace</li>
+			<li>missing-final-newline</li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>Refactor Messages</h3>
+			<ul>
+			<li>too-many-locals</li>
+			<li>too-many-branches</li>
+			<li>too-many-statements</li>
+			</ul>
+		</section>
+		
+		<section>
+			<h3>Warning Messages</h3>
+			<ul>
+			<li>unused-argument</li>
+			<li>unused-variable</li>
+			<li>broad-except</li>
+			</ul>
+		</section>
 
         <section>
           <h3>Describing Error Messages</h3>
@@ -104,7 +141,7 @@ pylint --help-msg broad-except
   unrelated errors. This message belongs to the exceptions checker.
           </pre>
         </section>
-
+		
         <section>
           <h3>Customizing Validation Rules</h3>
           <p>Rules are controlled by a config file</p>
@@ -113,7 +150,7 @@ pylint --help-msg broad-except
         </section>
 
         <section>
-          <h3>Configuation File</h3>
+          <h3>Configuration File</h3>
           <p>Reg Exs for valid class / function / variable names</p>
           <p>Enable / disable style rules</p>
           <p>.pylintrc in your home folder will be used automatically</p>
@@ -125,7 +162,22 @@ pylint --help-msg broad-except
           <p>Validate coding standards every few weeks</p>
           <p>Can be integrated into many IDEs</p>
         </section>
+		
+		
+		<!--
+        <section>
+          <h3>Example Warnings</h3>
+          <pre>
+            W:112,12: Unused argument 'args' (unused-argument)
+            W:304, 8: Catching too general exception Exception (broad-except)
+            W:296, 9: Unused argument 'args' (unused-argument)
+            W:304,21: Unused variable 'ex' (unused-variable)
+            W: 10, 0: Unused import glob (unused-import)
+            W: 11, 0: Unused import time (unused-import)
+          </pre>
+        </section>
 
+		-->
 
       </div>
         </div>
@@ -143,7 +195,7 @@ pylint --help-msg broad-except
                 history: true,
                 center: true,
 
-                transition: 'convex', // none/fade/slide/convex/concave/zoom
+                transition: 'none', // none/fade/slide/convex/concave/zoom
 
                 // Optional reveal.js plugins
                 dependencies: [
