@@ -43,16 +43,29 @@
             <tr class="fragment"><td>Run</td><td>pylint -E example.py</td></tr>
           </table>
           -->
-          
+
           <!--
           <p class="fragment">Install:  sudo pip install pylint</p>
           <p class="fragment">Run:  pylint -E example.py</p>
           -->
         </section>
-        
+
         <section>
-            <h3>Run</h3>
-            <p>pylint -E example.py</p>
+            <section>
+              <h3>Run</h3>
+              <p>pylint -E example.py</p>
+            </section>
+            <section>
+              <pre>
+************* Module example1
+E:  8, 4: Method has no argument (no-method-argument)
+E: 14, 0: Duplicate argument name x in function definition (duplicate-argument-name)
+E: 26,11: Bad except clauses order (Exception is an ancestor class of LookupError)
+                      (bad-except-order)
+E: 22,14: No value for argument 'z' in function call (no-value-for-parameter)
+E: 23,24: Undefined variable 'c' (undefined-variable)
+              </pre>
+            </section>
         </section>
 
         <section>
@@ -60,19 +73,58 @@
             <p>PEP - 8 (by default)</p>
             <p>Scores code on a scale of 1 to 10</p>
         </section>
-        
+
         <section>
-            <h3>My First Attempt</h3>
+            <h3>Rating my code</h3>
             <p>Recently written script</p>
             <p>300 lines long</p>
-            <p>Score: <span class="fragment"><span style="color : red">-18.6</span>/10</span></p>
+            <p>Score: <span class="fragment" style="color : red">-18.6</span></p>
         </section>
 
         <section>
-            <h3>Configuring Coding Standards</h3>
-            <p>pylint --generate-rcfile > .pylintrc</p>
+          <h3>Example Warnings</h3>
+          <pre>
+            W:112,12: Unused argument 'args' (unused-argument)
+            W:304, 8: Catching too general exception Exception (broad-except)
+            W:296, 9: Unused argument 'args' (unused-argument)
+            W:304,21: Unused variable 'ex' (unused-variable)
+            W: 10, 0: Unused import glob (unused-import)
+            W: 11, 0: Unused import time (unused-import)
+          </pre>
         </section>
 
+        <section>
+          <h3>Describing Error Messages</h3>
+          <p>pylint --help-msg &lt;msg-name&gt;</p>
+          <pre>
+pylint --help-msg broad-except
+
+:broad-except (W0703): *Catching too general exception %s*
+  Used when an except catches a too general exception, possibly burying
+  unrelated errors. This message belongs to the exceptions checker.
+          </pre>
+        </section>
+
+        <section>
+          <h3>Customizing Validation Rules</h3>
+          <p>Rules are controlled by a config file</p>
+          <p>Pylint can generate a default config file</p>
+          <p>pylint --generate-rcfile > .pylintrc</p>
+        </section>
+
+        <section>
+          <h3>Configuation File</h3>
+          <p>Reg Exs for valid class / function / variable names</p>
+          <p>Enable / disable style rules</p>
+          <p>.pylintrc in your home folder will be used automatically</p>
+        </section>
+
+        <section>
+          <h3>Example Usage</h3>
+          <p>Check for errors before every commit</p>
+          <p>Validate coding standards every few weeks</p>
+          <p>Can be integrated into many IDEs</p>
+        </section>
 
 
       </div>
@@ -91,7 +143,7 @@
                 history: true,
                 center: true,
 
-                transition: 'slide', // none/fade/slide/convex/concave/zoom
+                transition: 'convex', // none/fade/slide/convex/concave/zoom
 
                 // Optional reveal.js plugins
                 dependencies: [
